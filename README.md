@@ -1,6 +1,6 @@
 # API do projeto Luppa
 
-Projeto criado para o desafio da empresa Luppa
+Projeto criado para o desafio da empresa Luppa, a arquitetura utilizada foi pensada no conceito SOLID com a utilização da estrutura de pastas seguindo o modelo package-by-feature.
 Este repositório contém a API REST deste projeto.
 
 
@@ -27,8 +27,10 @@ $ npm start
 #### Analise
 - (GET) /analysis/  - Retorna todas análises disponiveis no banco
 ```
-- ( JSON RETORNO)
-[ {
+(JSON RETORNO)
+
+[ 
+    {
         "analysisId": 2,
         "fullName": "Teste23232",
         "cpf": "000.111.222-00",
@@ -61,7 +63,8 @@ $ npm start
 
 - (GET) /analysis/{id} - Retorna uma análise pelo id
 ```
-- (JSON RETORNO) : 
+(JSON RETORNO) 
+
 {
     "analysisId": 1,
     "fullName": "Teste",
@@ -93,7 +96,8 @@ $ npm start
 ```
 - (POST) /analysis - Insere uma nova análise (Por não compreender as regras de negócio, fiquei com duvida se a aplicação fazia a busca pelo documento, ou se o mesmo era inserido para ser analisado, então optei por deixar como obrigatório a inserção de ao menos um documento)
 ```
-- (JSON ENTRADA) :
+(JSON ENTRADA)
+
 {
   "fullName": "Teste23232",
   "cpf": "000.111.222-00",
@@ -103,11 +107,16 @@ $ npm start
       }
     ]
 }
-- (JSON SAÍDA) : {
+
+
+(JSON SAÍDA)
+
+{
     "analysisId": 2
 }
 ``` 
 
 - Por padrão o job assincrono é executado a cada um minuto na aplicação, varrendo o banco verificando quais documentos não tem verificação, e inserindo aleatoriamente
-Made by Guilherme
+
+- Made by Guilherme Gonzalez Vieira
 

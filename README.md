@@ -1,6 +1,6 @@
 # API do projeto Luppa
 
-Projeto criado para o desafio da empresa Luppa, a arquitetura utilizada foi pensada no conceito SOLID com a utilização da estrutura de pastas seguindo o modelo package-by-feature.
+Projeto criado para o desafio da empresa Luppa, a arquitetura utilizada foi pensada seguindo os conceitos de SOLID com a utilização da estrutura de pastas seguindo o modelo package-by-feature.
 Este repositório contém a API REST deste projeto.
 
 

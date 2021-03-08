@@ -1,15 +1,6 @@
-# Awesome Project Build with TypeORM
-
-Steps to run this project:
-
-1. Run `npm i` command
-2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
-
-
 # API do projeto Luppa
 
-O projeto Retomada foi criado com o intuito de auxiliar escolas que estão no momento retorno às aulas durante a pandemia, ajudando-as a acompanhar atividades, alunos e funcionários, a fim de que possam tomar decisões estratégicas.
+Projeto criado para o desafio da empresa Luppa
 Este repositório contém a API REST deste projeto.
 
 
@@ -35,7 +26,9 @@ $ npm start
 ### Rotas base
 #### Analise
 - (GET) /analysis/  - Retorna todas análises disponiveis no banco
-- ( JSON RETORNO) : [ {
+```
+- ( JSON RETORNO)
+[ {
         "analysisId": 2,
         "fullName": "Teste23232",
         "cpf": "000.111.222-00",
@@ -64,9 +57,12 @@ $ npm start
         ]
     }
 ]
+```
 
 - (GET) /analysis/{id} - Retorna uma análise pelo id
-- (JSON RETORNO) : {
+```
+- (JSON RETORNO) : 
+{
     "analysisId": 1,
     "fullName": "Teste",
     "cpf": "000.111.222-00",
@@ -94,9 +90,11 @@ $ npm start
         }
     ]
 }
-
+```
 - (POST) /analysis - Insere uma nova análise (Por não compreender as regras de negócio, fiquei com duvida se a aplicação fazia a busca pelo documento, ou se o mesmo era inserido para ser analisado, então optei por deixar como obrigatório a inserção de ao menos um documento)
-- (JSON ENTRADA) : {
+```
+- (JSON ENTRADA) :
+{
   "fullName": "Teste23232",
   "cpf": "000.111.222-00",
   "documentos": [
@@ -108,7 +106,7 @@ $ npm start
 - (JSON SAÍDA) : {
     "analysisId": 2
 }
- 
+``` 
 
 - Por padrão o job assincrono é executado a cada um minuto na aplicação, varrendo o banco verificando quais documentos não tem verificação, e inserindo aleatoriamente
 Made by Guilherme

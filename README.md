@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# luppa
-=======
 # API do projeto Luppa
 
 Projeto criado para o desafio da empresa Luppa, a arquitetura utilizada foi pensada seguindo os conceitos de SOLID com a utilização da estrutura de pastas seguindo o modelo package-by-feature.
@@ -122,5 +119,3 @@ $ npm start
 - Por padrão o job assincrono é executado a cada um minuto na aplicação, varrendo o banco verificando quais documentos não tem verificação, e inserindo aleatoriamente
 
 - Made by Guilherme Gonzalez Vieira
-
->>>>>>> a986c11308af58d2ae57ec0dfad2a3b1c6175fa0
